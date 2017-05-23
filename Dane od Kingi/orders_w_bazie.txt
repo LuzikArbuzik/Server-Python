@@ -1,0 +1,42 @@
+{
+    "url": "http://127.0.0.1:8000/orders/3/",
+    "dishes": [
+          {
+        "url": "http://127.0.0.1:8000/dishes/5/",
+        "name": "pizza",
+        "quantity": 3
+        },
+          {
+        "url": "http://127.0.0.1:8000/dishes/6/",
+        "name": "pepsi",
+        "quantity": 2
+        }
+    ],
+    "client": {
+        "url": "http://127.0.0.1:8000/clients/3/",
+        "id": 3,
+        "first_name": "Jan",
+        "last_name": "Kowalski",
+        "phone_number": "+48 123123123",
+        "address": {
+            "url": "http://127.0.0.1:8000/address/6/",
+            "id": 6,
+            "city": "Wroclaw",
+            "street": "Grunwaldzka",
+            "address_num": "12",
+            "door_num": "1"
+        }
+    },
+    "restaurant": {
+        "url": "http://127.0.0.1:8000/restaurants/3/",
+        "address": {
+            "url": "http://127.0.0.1:8000/address/5/",
+            "id": 5,
+            "city": "Wroclaw",
+            "street": "Grunwaldzka",
+            "address_num": "55",
+            "door_num": "2"
+        },
+        "name": "Telepizza"
+    }
+}

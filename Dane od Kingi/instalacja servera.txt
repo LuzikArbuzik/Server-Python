@@ -1,0 +1,25 @@
+Wersja: Python 3.6.1
+
+Do jakiegoś folderu wrzucić wszystko co znajduje się w zip-ie
+
+Usunąć 2 pliki:
+z folderu serwer   db.sqlite3
+z folderu server\rest_srv\migrations     0001_initial.py
+
+Przez wiersz poleceń wejść do tego folderu (ma się w nim znajdować folder serwer i plik requirements.txt)
+
+Wykonać kolejne polecenia:
+python -m venv env
+env\Scripts\activate
+pip install -r requirements.txt
+cd serwer
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+
+Od teraz powinno działać. 
+Uruchomienie kolejny raz to wykonanie tylko 3 poleceń:
+env\Scripts\activate
+cd serwer
+python manage.py runserver
